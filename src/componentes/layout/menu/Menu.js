@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link, BrowserRouter } from 'react-router-dom';
 
 export default class Menu extends React.Component {
     render() {
         return (
-            <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
                 <div className="container">
-                    <a className="navbar-brand" href="index.html">Orçamento</a>
+                    <Link to="/" className="navbar-brand">Orçamento</Link>
                     <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -21,6 +22,7 @@ export default class Menu extends React.Component {
                                 <a className="nav-link" href="contact.html">Contato</a>
                             </li>
                         </ul>
+                        <Link to="/login" class="btn btn-primary">Login</Link>
                     </div>
                 </div>
             </nav>
